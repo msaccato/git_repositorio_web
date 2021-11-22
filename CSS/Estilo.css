@@ -1,0 +1,81 @@
+* {margin: 0;padding: 0;}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: plum;
+}
+
+.borde {
+    border: solid 1px black;
+}
+
+a {
+    background-color: plum;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* clase grid */
+.grid-areas {
+    display: grid;
+    grid-template-areas: 
+    "none menup menup menup"
+    "encabezado encabezado encabezado encabezado"
+    "pie pie pie pie" ;
+    grid-template-columns: 20% 40% 40% 10% ;
+    grid-template-rows: 15% auto 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+/* Areas de grid*/
+
+nav {
+    grid-area: menup;
+    align-items: center;
+    background-color: lightcoral;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+header {
+    grid-area: encabezado;
+    align-items: center;
+}
+
+footer {
+    grid-area: pie;
+    background-color: black;
+    color: lightcoral;
+    font-family: fantasy;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Flex */
+.menu-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 25px;
+    list-style: none;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5%;
+}
